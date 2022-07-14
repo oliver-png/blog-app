@@ -4,6 +4,7 @@
     background-color: #DAEAF1 !important;
     font-family: 'Montserrat', sans-serif;
     padding: 0;
+    
 
 }
 
@@ -11,8 +12,6 @@
 .nav-container{
     margin: 0 11%;
 }
-
-
 
 
 .main-container{
@@ -55,6 +54,31 @@ h3{
     margin: 10px 0 !important;
 }
 
+h5{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+}
+
+.post-container{
+    width: 50%;
+    margin-top: 5px;
+    margin-left: 18%;
+    margin-bottom: 10%;
+}
+
+.heading-input{
+    margin-bottom: 25px;
+}
+
+.post-text{
+    height: 200px;
+}
+
+.spacer{
+    height: 50px;
+}
+
+
 @media (max-width: 992px){
     .home-link{
         margin-left: 0;
@@ -62,7 +86,7 @@ h3{
 
 }
 
-@media (max-width: 376px){
+@media (max-width: 394px){
     .nav-container{
         margin: 0 auto;
     }

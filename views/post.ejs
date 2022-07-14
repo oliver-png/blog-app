@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid nav-container">
       <a class="navbar-brand" href="#">
         <img class="nav-img" src="bp.png" alt="">
@@ -45,19 +45,21 @@
     </div>
   </nav>
 
-  <div class="spacer"></div>
-  <div class="main-container container-fluid">
 
-    <h3>Home</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Adipiscing elit duis tristique sollicitudin. Tempus imperdiet nulla malesuada pellentesque elit eget. Diam sit amet nisl suscipit adipiscing bibendum. Magnis dis parturient montes nascetur ridiculus. Placerat in egestas erat imperdiet sed euismod nisi. Erat velit scelerisque in dictum non consectetur. Fermentum posuere urna nec tincidunt praesent semper feugiat nibh. Facilisis sed odio morbi quis commodo odio aenean sed adipiscing. Sed id semper risus in. Dolor sed viverra ipsum nunc aliquet bibendum enim facilisis. Tortor aliquam nulla facilisi cras fermentum. Ultrices in iaculis nunc sed augue lacus. Netus et malesuada fames ac turpis egestas.</p>
-
-    <% for (let i = 0; i < entries.length; i++){ %>
-      <h3><%=entries[i].heading%></h3>
-      <p style="margin-bottom: 25px !important;"><%=entries[i].content.substring(0, 201)%>... <a href="/posts/<%=entries[i].route%>">Read more</a></p>
-    <% } %>
-    
-    
+  
+  <div class="post-container container-fluid">
+    <h3 style="margin-bottom: 20px !important;">New post</h3>
+    <form action="/" method="post">
+        <h5>Title</h5>
+        <input class="form-control heading-input" name="title" type="text">
+        <h5>Post</h5>
+        <textarea class="form-control post-text" name="content" rows="3"></textarea>
+        <button style="margin-top: 15px;" class="btn btn-primary" type="submit">Submit</button>
+    </form>
   </div>
+  
+
+
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
