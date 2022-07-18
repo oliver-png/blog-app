@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid nav-container">
       <a class="navbar-brand" href="#">
-        <img class="nav-img" src="bp.png" alt="">
+        <img class="nav-img" src="/bp.png" alt="">
       </a>
 
       <ul class="navbar-nav me-auto mb-1 mb-lg-0">
@@ -45,23 +45,14 @@
     </div>
   </nav>
 
-  <div class="spacer"></div>
   <div class="main-container container-fluid">
-
-    <h3>Home</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Adipiscing elit duis tristique sollicitudin. Tempus imperdiet nulla malesuada pellentesque elit eget. Diam sit amet nisl suscipit adipiscing bibendum. Magnis dis parturient montes nascetur ridiculus. Placerat in egestas erat imperdiet sed euismod nisi. Erat velit scelerisque in dictum non consectetur. Fermentum posuere urna nec tincidunt praesent semper feugiat nibh. Facilisis sed odio morbi quis commodo odio aenean sed adipiscing. Sed id semper risus in. Dolor sed viverra ipsum nunc aliquet bibendum enim facilisis. Tortor aliquam nulla facilisi cras fermentum. Ultrices in iaculis nunc sed augue lacus. Netus et malesuada fames ac turpis egestas.</p>
-
-    <% for (let i = 0; i < entries.length; i++){ %>
-      <h3><%=entries[i].heading%></h3>
-      <p style="margin-bottom: 25px !important;"><%=entries[i].content.substring(0, 201)%>... <a href="/posts/<%=entries[i].route%>">Read more</a></p>
-    <% } %>
-
-    <form action="/new">
-      <button class="btn btn-secondary new-post-button" type="submit">+ New post</button>
-    </form>
-    
-    
+    <h3><%=heading%></h3>
+    <p><%=content%></p>
   </div>
+  
+
+
+
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>

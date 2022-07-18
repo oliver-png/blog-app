@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500&display=swap');
 
+body{
+    scrollbar-width: thin;
+}
+
 .navbar{
     background-color: #DAEAF1 !important;
     font-family: 'Montserrat', sans-serif;
@@ -17,7 +21,7 @@
 .main-container{
     font-family: 'Montserrat', sans-serif;
     margin-top: 20px;
-    width: 78%;
+    width: 78% !important;
 }
 
 .nav-link{
@@ -63,7 +67,7 @@ h5{
     width: 50%;
     margin-top: 5px;
     margin-left: 18%;
-    margin-bottom: 10%;
+    margin-bottom: 8.5%;
 }
 
 .heading-input{
@@ -76,6 +80,11 @@ h5{
 
 .spacer{
     height: 50px;
+}
+
+
+.new-post-button{
+    margin-bottom: 10px;
 }
 
 
