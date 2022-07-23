@@ -11,7 +11,7 @@
 <body>
   <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid nav-container">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="/">
         <img class="nav-img" src="bp.png" alt="">
       </a>
 
@@ -29,15 +29,15 @@
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           
           <li class="nav-item home-link">
-            <a class="nav-link active" aria-current="page" href="#">HOME</a>
+            <a class="nav-link active" aria-current="page" href="/">HOME</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">CONTACT</a>
+            <a class="nav-link active" aria-current="page" href="/contact">CONTACT</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">ABOUT</a>
+            <a class="nav-link active" aria-current="page" href="/about">ABOUT</a>
           </li>
           
         </ul>
@@ -53,13 +53,12 @@
 
     <% for (let i = 0; i < entries.length; i++){ %>
       <h3><%=entries[i].heading%></h3>
-      <p style="margin-bottom: 25px !important;"><%=entries[i].content.substring(0, 201)%>... <a href="/posts/<%=entries[i].route%>">Read more</a></p>
+      <p style="margin-bottom: 20px !important;"><%=entries[i].content.substring(0, 201)%>... <a href="/posts/<%=entries[i].route%>">Read more</a></p>
     <% } %>
 
     <form action="/new">
       <button class="btn btn-secondary new-post-button" type="submit">+ New post</button>
     </form>
-    
     
   </div>
 
