@@ -2,7 +2,7 @@
 
 <ul>
   <li>Blog web app that lets user add and save posts to home page</li>
-  <li>Node.js and Express.js used for backend, with EJS for templating.</li>
+  <li>Node.js and Express.js used for backend, with EJS for templating</li>
   <li>MongoDB database used with Mongoose to save posts</li>
 </ul>
 
