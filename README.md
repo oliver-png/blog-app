@@ -11,7 +11,9 @@
 <br>
 
 <h2>New post:</h2>
-![blog1](https://user-images.githubusercontent.com/68671581/181605356-3e1cd1fa-f197-4bbd-8ae5-52c4c5a965ad.png)
+
+<img src=https://user-images.githubusercontent.com/68671581/181605412-9fa74d65-be7f-457c-a1eb-a1d218b36c6d.png>
+
 
 
 <br>
